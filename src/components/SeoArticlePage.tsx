@@ -7,14 +7,19 @@ type SeoArticlePageProps = {
   sections: Array<{
     title: string;
     paragraphs: string[];
+    bullets?: string[];
   }>;
   faqs: Array<{
     question: string;
     answer: string;
   }>;
+  relatedLinks?: Array<{
+    label: string;
+    href: string;
+  }>;
 };
 
-export function SeoArticlePage({ h1, intro, sections, faqs }: SeoArticlePageProps) {
+export function SeoArticlePage({ h1, intro, sections, faqs, relatedLinks = [] }: SeoArticlePageProps) {
   return (
     <SeoPageLayout>
       <article>
@@ -35,6 +40,16 @@ export function SeoArticlePage({ h1, intro, sections, faqs }: SeoArticlePageProp
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
+              {section.bullets?.length ? (
+                <ul className="mt-5 grid gap-2 text-sm leading-6 text-slate-700">
+                  {section.bullets.map((bullet) => (
+                    <li key={bullet} className="flex gap-3 rounded-lg border border-slate-200 bg-white px-4 py-3">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-600" />
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
             </section>
           ))}
         </div>
@@ -54,6 +69,23 @@ export function SeoArticlePage({ h1, intro, sections, faqs }: SeoArticlePageProp
             ))}
           </div>
         </section>
+
+        {relatedLinks.length ? (
+          <section className="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <h2 className="text-2xl font-bold tracking-normal text-navy">Related guides</h2>
+            <div className="mt-4 flex flex-wrap gap-3">
+              {relatedLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-blue-200 hover:text-blue-600"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </section>
+        ) : null}
       </article>
     </SeoPageLayout>
   );

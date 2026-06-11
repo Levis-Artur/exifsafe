@@ -17,7 +17,7 @@ const steps = [
   {
     number: "04",
     title: "Download clean image",
-    text: "Your cleaned photo is ready, pixel-perfect but with all hidden data removed.",
+    text: "Your cleaned photo is ready with common hidden metadata removed by browser re-export.",
   },
 ];
 

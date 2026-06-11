@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
+import { CommonMetadataExamples } from "@/components/CommonMetadataExamples";
 import { PrivacySection } from "@/components/PrivacySection";
 import { TrustBar } from "@/components/TrustBar";
 import { UploadSection } from "@/components/UploadSection";
@@ -22,6 +23,7 @@ export default function Home() {
       <VerifyPrivacy />
       <WhyLocalProcessing />
       <UseCases />
+      <CommonMetadataExamples />
       <FAQ />
       <Footer />
     </main>

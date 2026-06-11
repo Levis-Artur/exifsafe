@@ -41,13 +41,12 @@ export function Footer() {
             upload, analytics, telemetry, cookies or account.
           </p>
           <a
-            href="#"
-            title="GitHub repository coming soon"
-            aria-disabled="true"
-            tabIndex={-1}
-            className="pointer-events-none mt-5 inline-flex cursor-default text-sm font-medium text-slate-500"
+            href="https://github.com/Levis-Artur/exifsafe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex text-sm font-medium text-slate-500 transition hover:text-blue-600"
           >
-            GitHub — coming soon
+            GitHub
           </a>
           </div>
 

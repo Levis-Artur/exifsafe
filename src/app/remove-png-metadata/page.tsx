@@ -2,40 +2,87 @@ import type { Metadata } from "next";
 import { SeoArticlePage } from "@/components/SeoArticlePage";
 
 export const metadata: Metadata = {
-  title: "Remove Metadata from PNG Images",
-  description: "Create a cleaned PNG locally in your browser. Free, private, no upload and no account required.",
+  title: "Remove PNG Metadata Online for Free",
+  description: "Remove common metadata from PNG images locally in your browser. Free, private, no upload, no tracking and no account required.",
 };
 
 export default function RemovePngMetadataPage() {
   return (
     <SeoArticlePage
       h1="Remove metadata from PNG images"
-      intro="PNG files can contain text chunks, color profiles and other metadata. ExifSafe creates a cleaned browser-exported PNG."
+      intro="PNG files can contain text chunks, color profiles and other embedded data. ExifSafe creates a cleaned browser-exported PNG locally."
       sections={[
         {
-          title: "What PNG metadata can contain",
+          title: "Can PNG files contain metadata?",
           paragraphs: [
-            "PNG files can include textual chunks, color profile data and other embedded information depending on how they were created.",
-            "For web sharing, you may prefer a browser-exported copy with common metadata removed.",
+            "PNG files can contain metadata such as text chunks, color profile information, software information and other embedded data.",
+            "PNG does not use EXIF in the same common way as JPG, but it can still contain hidden metadata.",
           ],
         },
         {
-          title: "Local PNG output",
+          title: "What metadata can be found in PNG files?",
           paragraphs: [
-            "ExifSafe handles PNG output locally in the browser. Your file is not sent to a server for processing.",
-            "The tool is free and does not require accounts, cookies, analytics or tracking.",
+            "The metadata inside a PNG depends on the software, editor or export workflow that created the file.",
+          ],
+          bullets: [
+            "Text chunks",
+            "Color profile information",
+            "Software or editor information",
+            "Creation or modification details",
+            "Embedded descriptions or comments",
+          ],
+        },
+        {
+          title: "How ExifSafe cleans PNG files",
+          paragraphs: [
+            "ExifSafe processes the PNG locally in the browser and creates a new PNG copy from the visible pixel data.",
+            "This helps remove common embedded metadata while keeping the visible image content. No upload, account, analytics, telemetry or cookies are required.",
+          ],
+        },
+        {
+          title: "Will PNG quality change?",
+          paragraphs: [
+            "PNG is generally lossless. Browser-exported PNG files should preserve visible image quality, although file size may change depending on how the browser encodes the image.",
+          ],
+        },
+        {
+          title: "When to clean PNG metadata",
+          paragraphs: [
+            "Cleaning common PNG metadata can be useful before sharing screenshots, graphics or exported design files.",
+          ],
+          bullets: [
+            "Before sharing screenshots",
+            "Before uploading graphics",
+            "Before sending design previews",
+            "Before publishing images online",
+            "Before sharing images from editing tools",
           ],
         },
       ]}
       faqs={[
         {
-          question: "Are PNG files uploaded?",
-          answer: "No. PNG processing happens locally in your browser.",
+          question: "Does PNG always contain metadata?",
+          answer: "No. Some PNG files contain little or no metadata, while others may include text chunks or color profile information.",
         },
         {
-          question: "Can PNG file size change?",
-          answer: "Yes. Browser-exported PNG files may be smaller or larger depending on the source file and browser encoder.",
+          question: "Does ExifSafe upload PNG files?",
+          answer: "No. PNG files are processed locally in your browser.",
         },
+        {
+          question: "Why did my cleaned PNG file size change?",
+          answer: "The browser creates a new PNG file during export, and the encoding may differ from the original file.",
+        },
+        {
+          question: "Is ExifSafe a forensic PNG metadata tool?",
+          answer: "No. ExifSafe is a lightweight browser-based privacy tool, not a forensic metadata audit.",
+        },
+      ]}
+      relatedLinks={[
+        { label: "Remove EXIF data", href: "/remove-exif-data" },
+        { label: "Remove GPS from photo", href: "/remove-gps-from-photo" },
+        { label: "Remove photo location", href: "/remove-photo-location" },
+        { label: "What is EXIF data?", href: "/what-is-exif-data" },
+        { label: "Privacy policy", href: "/privacy" },
       ]}
     />
   );

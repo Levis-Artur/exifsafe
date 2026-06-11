@@ -3,14 +3,15 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://exifsafe.com"),
   title: {
     default: "ExifSafe - Free Photo Metadata Remover",
     template: "%s | ExifSafe",
   },
-  description: "Remove common EXIF, GPS and camera metadata locally. Free, no upload, no analytics, no telemetry and no account.",
+  description: "Remove common EXIF, GPS, camera and hidden photo metadata locally in your browser. Free, private, no upload, no tracking and no account.",
   openGraph: {
     title: "ExifSafe - Free Photo Metadata Remover",
-    description: "Remove common EXIF, GPS and camera metadata locally. Free, no upload, no analytics, no telemetry and no account.",
+    description: "Remove common EXIF, GPS, camera and hidden photo metadata locally in your browser. Free, private, no upload, no tracking and no account.",
     type: "website",
     siteName: "ExifSafe",
   },
