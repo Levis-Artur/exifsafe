@@ -78,8 +78,8 @@ export default function RemovePhotoLocationPage() {
           answer: "No. The photo stays on your device and is processed locally in your browser.",
         },
         {
-          question: "Is location removal guaranteed?",
-          answer: "ExifSafe removes common metadata through browser re-export, but it is not a forensic metadata audit.",
+          question: "What are the limitations for location metadata?",
+          answer: "ExifSafe removes common location metadata through browser re-export, but it is not a forensic metadata audit.",
         },
       ]}
       relatedLinks={[

@@ -456,7 +456,7 @@ export function UploadSection() {
                     <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true" />
                     <div>
                       <p className="text-sm font-semibold text-emerald-900">
-                        Metadata removed successfully
+                        Common metadata markers removed successfully
                       </p>
                       <p className="mt-1 text-sm leading-6 text-emerald-800">
                         Your image looks the same, but common hidden metadata has been removed.
