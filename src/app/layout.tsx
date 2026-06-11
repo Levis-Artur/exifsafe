@@ -12,6 +12,10 @@ export const metadata: Metadata = {
     template: "%s | ExifSafe",
   },
   description: siteDescription,
+  icons: {
+    icon: "/exifsafe-icon.svg",
+    apple: "/exifsafe-icon.svg",
+  },
   openGraph: {
     title: "ExifSafe - Free Photo Metadata Remover",
     description: siteDescription,
@@ -19,11 +23,20 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "ExifSafe",
     locale: "en_US",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "ExifSafe - Free Photo Metadata Remover",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ExifSafe - Free Photo Metadata Remover",
     description: siteDescription,
+    images: ["/og-image.svg"],
   },
   robots: {
     index: true,

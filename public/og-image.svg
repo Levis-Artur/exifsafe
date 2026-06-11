@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">ExifSafe social preview</title>
+  <desc id="desc">ExifSafe free photo metadata remover with no upload, no tracking and no account.</desc>
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <path d="M0 0h1200v630H0z" fill="#ffffff"/>
+  <path d="M0 0h1200v630H0z" fill="url(#grid)" opacity="0.55"/>
+  <rect x="78" y="76" width="1044" height="478" rx="42" fill="#ffffff" stroke="#dbe3ef" stroke-width="2"/>
+  <circle cx="925" cy="170" r="148" fill="#dbeafe"/>
+  <circle cx="1000" cy="430" r="94" fill="#eff6ff"/>
+
+  <g transform="translate(120 148)">
+    <rect width="96" height="96" rx="24" fill="#2563eb"/>
+    <path d="M48 18 72 27v22c0 22-9 41-24 51-15-10-24-29-24-51V27l24-9Z" fill="#ffffff"/>
+    <path d="m38 51 9 9 20-23" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <text x="120" y="300" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="800" letter-spacing="0">
+    ExifSafe
+  </text>
+  <text x="120" y="378" fill="#1d4ed8" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" letter-spacing="0">
+    Free Photo Metadata Remover
+  </text>
+  <text x="120" y="448" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="500" letter-spacing="0">
+    No upload · No tracking · No account
+  </text>
+
+  <g transform="translate(790 184)">
+    <path d="M150 0 280 50v98c0 91-52 171-130 206C72 319 20 239 20 148V50L150 0Z" fill="#2563eb"/>
+    <path d="M150 44 236 77v68c0 61-34 119-86 147-52-28-86-86-86-147V77l86-33Z" fill="#eff6ff"/>
+    <path d="m116 157 35 35 72-83" fill="none" stroke="#2563eb" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0v44" fill="none" stroke="#dbeafe" stroke-width="1"/>
+    </pattern>
+  </defs>
+</svg>
