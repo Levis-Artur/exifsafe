@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SeoCTA } from "@/components/SeoCTA";
 import { SeoPageLayout } from "@/components/SeoPageLayout";
+import { StructuredData } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -38,9 +39,29 @@ const sections = [
   },
 ];
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://exifsafe.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Privacy Policy",
+      item: "https://exifsafe.com/privacy",
+    },
+  ],
+};
+
 export default function PrivacyPage() {
   return (
     <SeoPageLayout>
+      <StructuredData data={breadcrumbJsonLd} />
       <article>
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
           <p className="text-sm font-bold text-blue-600">Simple privacy policy</p>

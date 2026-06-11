@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function RemoveGpsFromPhotoPage() {
   return (
     <SeoArticlePage
+      breadcrumb={{ name: "Remove GPS Location from Photos", path: "/remove-gps-from-photo" }}
       h1="Remove GPS location from photos before sharing"
       intro="Some photos may contain GPS coordinates. ExifSafe helps clean common location metadata locally before you share."
       sections={[

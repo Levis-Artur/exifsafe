@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function RemovePngMetadataPage() {
   return (
     <SeoArticlePage
+      breadcrumb={{ name: "Remove PNG Metadata", path: "/remove-png-metadata" }}
       h1="Remove metadata from PNG images"
       intro="PNG files can contain text chunks, color profiles and other embedded data. ExifSafe creates a cleaned browser-exported PNG locally."
       sections={[

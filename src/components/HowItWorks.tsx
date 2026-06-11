@@ -11,13 +11,13 @@ const steps = [
   },
   {
     number: "03",
-    title: "Metadata is stripped",
-    text: "GPS, timestamps, camera info and all hidden tags are removed from the image.",
+    title: "Common metadata is removed",
+    text: "Common GPS, timestamps, camera info and hidden metadata markers are removed through browser re-export.",
   },
   {
     number: "04",
     title: "Download clean image",
-    text: "Your cleaned photo is ready with common hidden metadata removed by browser re-export.",
+    text: "Your cleaned photo is ready with common hidden metadata removed.",
   },
 ];
 

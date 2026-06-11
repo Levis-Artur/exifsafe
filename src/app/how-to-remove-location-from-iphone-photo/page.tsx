@@ -9,6 +9,10 @@ export const metadata: Metadata = {
 export default function IPhoneLocationGuidePage() {
   return (
     <SeoArticlePage
+      breadcrumb={{
+        name: "How to Remove Location from iPhone Photos",
+        path: "/how-to-remove-location-from-iphone-photo",
+      }}
       h1="How to remove location from iPhone photos"
       intro="iPhone photos may include location metadata if location access was enabled for the Camera app. ExifSafe can clean a copy locally in your browser."
       sections={[

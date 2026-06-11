@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function RemoveExifDataPage() {
   return (
     <SeoArticlePage
+      breadcrumb={{ name: "Remove EXIF Data", path: "/remove-exif-data" }}
       h1="Remove EXIF data from photos online for free"
       intro="ExifSafe is a free, lightweight browser-based tool for privacy-focused cleaning before you share photos."
       sections={[

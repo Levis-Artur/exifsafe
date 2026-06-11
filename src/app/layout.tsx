@@ -2,18 +2,28 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 
+const siteDescription =
+  "Remove common EXIF, GPS and camera metadata from photos locally in your browser. Free, private, no upload, no tracking, no account.";
+
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://exifsafe.com"),
   title: {
     default: "ExifSafe - Free Photo Metadata Remover",
     template: "%s | ExifSafe",
   },
-  description: "Remove common EXIF, GPS, camera and hidden photo metadata locally in your browser. Free, private, no upload, no tracking and no account.",
+  description: siteDescription,
   openGraph: {
     title: "ExifSafe - Free Photo Metadata Remover",
-    description: "Remove common EXIF, GPS, camera and hidden photo metadata locally in your browser. Free, private, no upload, no tracking and no account.",
+    description: siteDescription,
+    url: "https://exifsafe.com",
     type: "website",
     siteName: "ExifSafe",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ExifSafe - Free Photo Metadata Remover",
+    description: siteDescription,
   },
   robots: {
     index: true,

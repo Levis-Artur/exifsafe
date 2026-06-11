@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function RemovePhotoLocationPage() {
   return (
     <SeoArticlePage
+      breadcrumb={{ name: "Remove Hidden Location Data from Photos", path: "/remove-photo-location" }}
       h1="Remove hidden location data from photos"
       intro="Location metadata can sometimes reveal where a photo was taken. ExifSafe helps clean common location-related metadata locally in your browser."
       sections={[

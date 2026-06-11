@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function RemoveJpgMetadataPage() {
   return (
     <SeoArticlePage
+      breadcrumb={{ name: "Remove JPG Metadata", path: "/remove-jpg-metadata" }}
       h1="Remove metadata from JPG images"
       intro="JPG files commonly contain EXIF metadata. ExifSafe creates a cleaned JPG copy locally in your browser with no upload or account."
       sections={[

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function RemoveWebpMetadataPage() {
   return (
     <SeoArticlePage
+      breadcrumb={{ name: "Remove WEBP Metadata", path: "/remove-webp-metadata" }}
       h1="Remove metadata from WEBP images"
       intro="WEBP files may contain EXIF or XMP metadata. ExifSafe creates a cleaned WEBP version locally in your browser."
       sections={[

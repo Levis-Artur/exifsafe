@@ -9,6 +9,10 @@ export const metadata: Metadata = {
 export default function AndroidLocationGuidePage() {
   return (
     <SeoArticlePage
+      breadcrumb={{
+        name: "How to Remove Location from Android Photos",
+        path: "/how-to-remove-location-from-android-photo",
+      }}
       h1="How to remove location from Android photos"
       intro="Android photos may include location metadata depending on camera app settings, device manufacturer and permissions."
       sections={[

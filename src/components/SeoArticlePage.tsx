@@ -1,5 +1,6 @@
 import { SeoCTA } from "@/components/SeoCTA";
 import { SeoPageLayout } from "@/components/SeoPageLayout";
+import { StructuredData } from "@/components/StructuredData";
 
 type SeoArticlePageProps = {
   h1: string;
@@ -17,11 +18,42 @@ type SeoArticlePageProps = {
     label: string;
     href: string;
   }>;
+  breadcrumb: {
+    name: string;
+    path: string;
+  };
 };
 
-export function SeoArticlePage({ h1, intro, sections, faqs, relatedLinks = [] }: SeoArticlePageProps) {
+export function SeoArticlePage({
+  h1,
+  intro,
+  sections,
+  faqs,
+  relatedLinks = [],
+  breadcrumb,
+}: SeoArticlePageProps) {
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://exifsafe.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: breadcrumb.name,
+        item: `https://exifsafe.com${breadcrumb.path}`,
+      },
+    ],
+  };
+
   return (
     <SeoPageLayout>
+      <StructuredData data={breadcrumbJsonLd} />
       <article>
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
           <p className="text-sm font-bold text-blue-600">Free browser-based privacy tool</p>

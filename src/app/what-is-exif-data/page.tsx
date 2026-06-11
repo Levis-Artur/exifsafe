@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function WhatIsExifDataPage() {
   return (
     <SeoArticlePage
+      breadcrumb={{ name: "What Is EXIF Data", path: "/what-is-exif-data" }}
       h1="What is EXIF data?"
       intro="EXIF is hidden technical information saved in many image files. It can describe how, when and sometimes where a picture was taken."
       sections={[

@@ -1,6 +1,6 @@
 import { ChevronDown } from "lucide-react";
 
-const questions = [
+export const faqQuestions = [
   {
     question: "Does ExifSafe upload my photos to a server?",
     answer: "No. Photos are processed locally in your browser. They never leave your device.",
@@ -47,7 +47,7 @@ export function FAQ() {
         </div>
 
         <div className="mt-10 space-y-3">
-          {questions.map((item, index) => (
+          {faqQuestions.map((item, index) => (
             <details
               key={item.question}
               className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
