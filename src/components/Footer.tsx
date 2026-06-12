@@ -11,6 +11,7 @@ const footerGroups = [
   {
     title: "Tools",
     links: [
+      { label: "Compress image", href: "/compress-image" },
       { label: "Remove EXIF data", href: "/remove-exif-data" },
       { label: "Remove GPS from photo", href: "/remove-gps-from-photo" },
       { label: "Remove photo location", href: "/remove-photo-location" },
