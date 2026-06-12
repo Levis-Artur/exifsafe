@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SeoCTA } from "@/components/SeoCTA";
 import { SeoPageLayout } from "@/components/SeoPageLayout";
 import { StructuredData } from "@/components/StructuredData";
@@ -87,6 +88,20 @@ export default function PrivacyPage() {
         <div className="mt-8">
           <SeoCTA />
         </div>
+
+        <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold tracking-normal text-navy">Learn more</h2>
+          <p className="mt-3 text-base leading-7 text-slate-600">
+            Read the practical guide on when local browser-based image processing can be a better
+            fit for private photos.
+          </p>
+          <Link
+            href="/guides/is-it-safe-to-upload-photos-to-online-tools"
+            className="mt-5 inline-flex text-sm font-semibold text-blue-600 transition hover:text-blue-700"
+          >
+            Is it safe to upload photos to online tools?
+          </Link>
+        </section>
       </article>
     </SeoPageLayout>
   );

@@ -23,7 +23,10 @@ const footerGroups = [
   {
     title: "Guides",
     links: [
+      { label: "Photo privacy guides", href: "/guides" },
       { label: "What is EXIF data?", href: "/what-is-exif-data" },
+      { label: "Safe photo sharing", href: "/guides/how-to-share-photos-safely-online" },
+      { label: "Compress without uploading", href: "/guides/how-to-compress-images-without-uploading" },
       { label: "iPhone photo location guide", href: "/how-to-remove-location-from-iphone-photo" },
       { label: "Android photo location guide", href: "/how-to-remove-location-from-android-photo" },
     ],

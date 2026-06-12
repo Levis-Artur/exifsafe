@@ -310,6 +310,12 @@ export default function CompressImagePage() {
                 Read privacy policy
               </Link>
               <Link
+                href="/guides/how-to-compress-images-without-uploading"
+                className="text-sm font-semibold text-blue-600 transition hover:text-blue-700"
+              >
+                Compression guide
+              </Link>
+              <Link
                 href="/remove-exif-data"
                 className="text-sm font-semibold text-blue-600 transition hover:text-blue-700"
               >
