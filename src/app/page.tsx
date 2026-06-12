@@ -2,8 +2,10 @@ import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { HomeGuides } from "@/components/HomeGuides";
 import { HowItWorks } from "@/components/HowItWorks";
 import { CommonMetadataExamples } from "@/components/CommonMetadataExamples";
+import { MoreTools } from "@/components/MoreTools";
 import { PrivacySection } from "@/components/PrivacySection";
 import { faqQuestions } from "@/components/FAQ";
 import { StructuredData } from "@/components/StructuredData";
@@ -64,12 +66,14 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <UploadSection />
+      <MoreTools />
       <HowItWorks />
       <PrivacySection />
       <VerifyPrivacy />
       <WhyLocalProcessing />
       <UseCases />
       <CommonMetadataExamples />
+      <HomeGuides />
       <FAQ />
       <Footer />
     </main>

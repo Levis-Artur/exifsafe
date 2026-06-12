@@ -351,6 +351,23 @@ export default function CompressImagePage() {
 
       <section className="border-t border-slate-200 bg-slate-50 px-5 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
+          <div className="mb-8 rounded-2xl border border-blue-100 bg-white p-6 shadow-sm">
+            <p className="text-sm font-bold text-blue-600">Learn more about local compression</p>
+            <h2 className="mt-3 text-2xl font-bold tracking-normal text-navy">
+              Want to understand how browser-based compression works?
+            </h2>
+            <p className="mt-3 text-sm leading-6 text-slate-600">
+              Learn when to use WEBP, quality settings and resizing to make smaller sharing
+              copies without uploading private files.
+            </p>
+            <Link
+              href="/guides/how-to-compress-images-without-uploading"
+              className="mt-5 inline-flex text-sm font-semibold text-blue-600 transition hover:text-blue-700"
+            >
+              How to compress images without uploading them
+            </Link>
+          </div>
+
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-normal text-navy sm:text-4xl">FAQ</h2>
             <p className="mt-3 text-lg text-slate-600">

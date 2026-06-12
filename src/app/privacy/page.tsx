@@ -92,8 +92,8 @@ export default function PrivacyPage() {
         <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold tracking-normal text-navy">Learn more</h2>
           <p className="mt-3 text-base leading-7 text-slate-600">
-            Read the practical guide on when local browser-based image processing can be a better
-            fit for private photos.
+            Learn more about the privacy trade-offs of upload-based tools in our guide: Is it
+            safe to upload photos to online tools?
           </p>
           <Link
             href="/guides/is-it-safe-to-upload-photos-to-online-tools"

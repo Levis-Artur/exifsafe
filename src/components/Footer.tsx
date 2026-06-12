@@ -5,12 +5,12 @@ const footerGroups = [
       { label: "Clean photo", href: "/#upload" },
       { label: "How it works", href: "/#how" },
       { label: "Verify privacy", href: "/#verify" },
-      { label: "Privacy", href: "/privacy" },
     ],
   },
   {
     title: "Tools",
     links: [
+      { label: "Remove photo metadata", href: "/" },
       { label: "Compress image", href: "/compress-image" },
       { label: "Remove EXIF data", href: "/remove-exif-data" },
       { label: "Remove GPS from photo", href: "/remove-gps-from-photo" },
@@ -24,11 +24,19 @@ const footerGroups = [
     title: "Guides",
     links: [
       { label: "Photo privacy guides", href: "/guides" },
+      { label: "Safe photo uploads guide", href: "/guides/is-it-safe-to-upload-photos-to-online-tools" },
       { label: "What is EXIF data?", href: "/what-is-exif-data" },
       { label: "Safe photo sharing", href: "/guides/how-to-share-photos-safely-online" },
       { label: "Compress without uploading", href: "/guides/how-to-compress-images-without-uploading" },
       { label: "iPhone photo location guide", href: "/how-to-remove-location-from-iphone-photo" },
       { label: "Android photo location guide", href: "/how-to-remove-location-from-android-photo" },
+    ],
+  },
+  {
+    title: "Company / Trust",
+    links: [
+      { label: "Privacy", href: "/privacy" },
+      { label: "GitHub", href: "https://github.com/Levis-Artur/exifsafe", external: true },
     ],
   },
 ];
@@ -44,17 +52,9 @@ export function Footer() {
             Free photo metadata remover. Built for local, browser-based processing with no
             upload, analytics, telemetry, cookies or account.
           </p>
-          <a
-            href="https://github.com/Levis-Artur/exifsafe"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-5 inline-flex text-sm font-medium text-slate-500 transition hover:text-blue-600"
-          >
-            GitHub
-          </a>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {footerGroups.map((group) => (
               <nav key={group.title}>
                 <h2 className="text-xs font-semibold uppercase text-navy">{group.title}</h2>
@@ -63,6 +63,8 @@ export function Footer() {
                     <a
                       key={link.href}
                       href={link.href}
+                      target={link.external ? "_blank" : undefined}
+                      rel={link.external ? "noopener noreferrer" : undefined}
                       className="text-sm text-slate-600 transition hover:text-blue-600"
                     >
                       {link.label}
