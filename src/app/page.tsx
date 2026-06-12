@@ -5,12 +5,12 @@ import { Hero } from "@/components/Hero";
 import { HomeGuides } from "@/components/HomeGuides";
 import { HowItWorks } from "@/components/HowItWorks";
 import { CommonMetadataExamples } from "@/components/CommonMetadataExamples";
+import { LazyUploadSection } from "@/components/LazyUploadSection";
 import { MoreTools } from "@/components/MoreTools";
 import { PrivacySection } from "@/components/PrivacySection";
 import { faqQuestions } from "@/components/FAQ";
 import { StructuredData } from "@/components/StructuredData";
 import { TrustBar } from "@/components/TrustBar";
-import { UploadSection } from "@/components/UploadSection";
 import { UseCases } from "@/components/UseCases";
 import { VerifyPrivacy } from "@/components/VerifyPrivacy";
 import { WhyLocalProcessing } from "@/components/WhyLocalProcessing";
@@ -65,7 +65,7 @@ export default function Home() {
       <Header />
       <Hero />
       <TrustBar />
-      <UploadSection />
+      <LazyUploadSection />
       <MoreTools />
       <HowItWorks />
       <PrivacySection />

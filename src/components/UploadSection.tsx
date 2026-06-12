@@ -1,6 +1,7 @@
 "use client";
 
-import { ChangeEvent, DragEvent, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import type { ChangeEvent, DragEvent } from "react";
 import { CheckCircle2, FileImage, ImageUp, Loader2, RotateCcw, ShieldCheck } from "lucide-react";
 import { createMetadataReport, type MetadataReport } from "@/lib/metadata-report";
 
